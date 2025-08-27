@@ -26,17 +26,78 @@ const callBtns = document.getElementsByClassName("call-card");
 for (let callBtn of callBtns) {
   callBtn.addEventListener("click", function () {
     // console.log("Button Clicked");
+    const titleText = callBtn.parentNode.parentNode.childNodes[3].innerText;
+
     const subTitleText = callBtn.parentNode.parentNode.childNodes[5].innerText;
-    console.log(subTitleText);
 
     const emgCallNumber = callBtn.parentNode.parentNode.childNodes[7].innerText;
-    console.log(emgCallNumber);
 
-    const coinText = getIdElement("coin-value").innerText;
-    let coinValue = Number(coinText) - 20;
-    coinText.innerText = coinValue;
-    console.log(coinValue);
+    const coinText =
+      callBtn.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode
+        .children[0].children[0].children[1].children[1].children[0].innerText;
 
-    alert(subTitleText + " :" + emgCallNumber);
+    const totalCoin = Number(coinText) - 20;
+    const currentCoin = (getIdElement("coin-point").innerText = totalCoin);
+
+    /* const historyContainer = getIdElement("call-history-container");
+    const newCart = document.createElement("div");
+    newCart.innerHTML = `<div
+            class="call-history mb-3 p-3 shadow-sm bg-[#FAFAFA] w-64 ml-3 rounded-lg flex justify-between items-center"
+          >
+            <div>
+              <h2 class="text-gray-800 font-semibold">${titleText}</h2>
+              <p class="text-gray-600 text-sm mt-1">${emgCallNumber}</p>
+            </div>
+            <div>
+              <h1>time</h1>
+            </div>
+          </div>`;
+    historyContainer.append(newCart); */
+
+    if (currentCoin < 0) {
+      alert(
+        "You don't have enough coins, You need at least 20 coins to make a call!"
+      );
+      const currentCoin = (getIdElement("coin-point").innerText = 0);
+      //Negative value chole ase tai standard hisebe 100 bosiye diyechi.
+      return;
+    } else {
+      const historyContainer = getIdElement("call-history-container");
+      const newCart = document.createElement("div");
+      const now = new Date();
+      const currentTime = now.toLocaleTimeString();
+      newCart.innerHTML = `<div
+            class="call-history mb-3 p-2 shadow-sm bg-[#FAFAFA] w-66 ml-2 mr-2 rounded-lg flex justify-between items-center"
+          >
+            <div>
+              <h2 class="text-gray-800 text-sm font-semibold">${titleText}</h2>
+              <p class="text-gray-600 text-sm mt-1">${emgCallNumber}</p>
+            </div>
+            <div>
+              <h2 class="text-sm font-medium">${currentTime}</h2>
+            </div>
+          </div>`;
+      historyContainer.append(newCart);
+      alert(subTitleText + " : " + emgCallNumber);
+    }
   });
 }
+
+//Clear Section
+document.getElementById("btn-clear").addEventListener("click", function () {
+  const historyContainer = getIdElement("call-history-container");
+  historyContainer.innerHTML = "";
+});
+
+// const now = new Date();
+// const currentTime = now.toLocaleTimeString();
+// console.log(currentTime);
+
+//Heart Section
+// const heartCounts = document.getElementsByClassName("hear-count");
+// console.log(heartCounts);
+
+// const heartCount = getIdElement("heart-count").innerText;
+
+//heart-count
+//heart
