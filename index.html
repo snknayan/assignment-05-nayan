@@ -52,7 +52,7 @@
           <button
             class="btn btn-soft bg-green-100 rounded-3xl w-[90px] h-[40px]"
           >
-            <span>100</span
+            <span id="coin-value">100</span
             ><img class="w-6 h-6" src="./assets/coin.png" alt="" />
           </button>
 
@@ -83,11 +83,14 @@
     </section>
     <!-- Card Section -->
     <section
-      class="mx-auto py-10 grid grid-cols-12 gap-8 ml-5 mr-5 bg-green-100"
+      class="mx-auto py-10 grid md:grid-cols-12 gap-8 ml-5 mr-5 bg-green-100"
     >
       <section class="col-span-9">
-        <div class="Card-parent grid grid-cols-3 gap-8">
-          <div class="rounded-lg w-[300px] min-h-[200px] p-4 bg-white">
+        <div class="Card-parent grid md:grid-cols-3 gap-8">
+          <!-- Card-1 -->
+          <div
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+          >
             <div class="flex justify-between items-center">
               <div
                 class="h-[40px] w-[40px] bg-red-300 flex justify-center items-center rounded-lg"
@@ -101,8 +104,10 @@
               <i class="fa-solid fa-heart"></i>
             </div>
             <h3 class="font-bold text-md mt-2">National Emergency Number</h3>
-            <p class="text-[12px] text-gray-600">National Emergency</p>
-            <h1 class="font-bold text-xl mt-3">999</h1>
+            <p class="emg-stitle text-[12px] text-gray-600">
+              National Emergency
+            </p>
+            <h1 class="emg-call-no mb-2 font-bold text-xl mt-3">999</h1>
             <div
               class="bg-gray-200 rounded-2xl w-9 h-6 flex items-center justify-center"
             >
@@ -110,20 +115,23 @@
             </div>
             <div class="mt-4 flex justify-between">
               <button
-                class="rounded-lg btn btn-outline w-[130px] h-[30px] text-gray-600"
+                class="copy-card rounded-lg btn btn-outline w-[130px] h-[30px] text-gray-600"
               >
                 <span><i class="fa-regular fa-copy text-gray-600"></i></span
                 >Copy
               </button>
               <button
-                class="rounded-lg btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
+                class="call-card rounded-lg btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
               >
                 <span class="text-white"><i class="fa-solid fa-phone"></i></span
                 >Call
               </button>
             </div>
           </div>
-          <div class="rounded-lg w-[300px] min-h-[200px] p-4 bg-white">
+          <!-- Card-02 -->
+          <div
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+          >
             <div class="flex justify-between items-center">
               <div
                 class="h-[40px] w-[40px] bg-[#DFEFFF] flex justify-center items-center rounded-lg"
@@ -137,8 +145,8 @@
               <i class="fa-solid fa-heart"></i>
             </div>
             <h3 class="font-bold text-md mt-2">Police Helpline Number</h3>
-            <p class="text-[12px] text-gray-600">Police</p>
-            <h1 class="font-bold text-xl mt-3">999</h1>
+            <p class="emg-stitle text-[12px] text-gray-600">Police</p>
+            <h1 class="emg-call-no mb-2 font-bold text-xl mt-3">999</h1>
             <div
               class="bg-gray-200 rounded-2xl w-12 h-6 flex items-center justify-center"
             >
@@ -146,20 +154,23 @@
             </div>
             <div class="mt-4 flex justify-between gap-1">
               <button
-                class="rounded-lg btn btn-outline w-[130px] h-[30px] text-gray-600"
+                class="copy-card rounded-lg btn btn-outline w-[130px] h-[30px] text-gray-600"
               >
                 <span><i class="fa-regular fa-copy text-gray-600"></i></span
                 >Copy
               </button>
               <button
-                class="rounded-lg btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
+                class="call-card rounded-lg btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
               >
                 <span class="text-white"><i class="fa-solid fa-phone"></i></span
                 >Call
               </button>
             </div>
           </div>
-          <div class="rounded-lg w-[300px] min-h-[200px] p-4 bg-white">
+          <!-- Card-03 -->
+          <div
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+          >
             <div class="flex justify-between items-center">
               <div
                 class="h-[40px] w-[40px] bg-red-300 flex justify-center items-center rounded-lg"
@@ -173,8 +184,8 @@
               <i class="fa-solid fa-heart"></i>
             </div>
             <h3 class="font-bold text-md mt-2">Fire Service Number</h3>
-            <p class="text-[12px] text-gray-600">Fire Service</p>
-            <h1 class="font-bold text-xl mt-3">999</h1>
+            <p class="emg-stitle text-[12px] text-gray-600">Fire Service</p>
+            <h1 class="emg-call-no mb-2 font-bold text-xl mt-3">999</h1>
             <div
               class="bg-gray-200 rounded-2xl w-9 h-6 flex items-center justify-center"
             >
@@ -182,20 +193,23 @@
             </div>
             <div class="mt-4 flex justify-between gap-1">
               <button
-                class="rounded-lg btn btn-outline w-[130px] h-[30px] text-gray-600"
+                class="copy-card rounded-lg btn btn-outline w-[130px] h-[30px] text-gray-600"
               >
                 <span><i class="fa-regular fa-copy text-gray-600"></i></span
                 >Copy
               </button>
               <button
-                class="rounded-lg btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
+                class="call-card rounded-lg btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
               >
                 <span class="text-white"><i class="fa-solid fa-phone"></i></span
                 >Call
               </button>
             </div>
           </div>
-          <div class="w-[300px] min-h-[200px] p-4 bg-white">
+          <!-- card-4 -->
+          <div
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+          >
             <div class="flex justify-between items-center">
               <div
                 class="h-[40px] w-[40px] bg-red-300 flex justify-center items-center rounded-lg"
@@ -209,8 +223,8 @@
               <i class="fa-solid fa-heart"></i>
             </div>
             <h3 class="font-bold text-md mt-2">Ambulance Service</h3>
-            <p class="text-[12px] text-gray-600">Ambulance</p>
-            <h1 class="font-bold text-xl mt-3">1994-999999</h1>
+            <p class="emg-stitle text-[12px] text-gray-600">Ambulance</p>
+            <h1 class="emg-call-no mb-2 font-bold text-xl mt-3">1994-999999</h1>
             <div
               class="bg-gray-200 rounded-2xl w-12 h-6 flex items-center justify-center"
             >
@@ -218,20 +232,23 @@
             </div>
             <div class="mt-4 flex justify-between gap-1">
               <button
-                class="rounded-lg btn btn-outline w-[130px] h-[30px] text-gray-600"
+                class="copy-card rounded-lg btn btn-outline w-[130px] h-[30px] text-gray-600"
               >
                 <span><i class="fa-regular fa-copy text-gray-600"></i></span
                 >Copy
               </button>
               <button
-                class="rounded-lg btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
+                class="call-card rounded-lg btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
               >
                 <span class="text-white"><i class="fa-solid fa-phone"></i></span
                 >Call
               </button>
             </div>
           </div>
-          <div class="rounded-lg w-[300px] min-h-[200px] p-4 bg-white">
+          <!-- Card-05 -->
+          <div
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+          >
             <div class="flex justify-between items-center">
               <div
                 class="h-[40px] w-[40px] bg-red-300 flex justify-center items-center rounded-lg"
@@ -245,27 +262,34 @@
               <i class="fa-solid fa-heart"></i>
             </div>
             <h3 class="font-bold text-md mt-2">Women & Child Helpline</h3>
-            <p class="text-[12px] text-gray-600">Women & Child Helpline</p>
-            <h1 class="font-bold text-xl mt-3">109</h1>
+            <p class="emg-stitle text-[12px] text-gray-600">
+              Women & Child Helpline
+            </p>
+            <h1 class="emg-call-no mb-2 font-bold text-xl mt-3">109</h1>
             <div
               class="bg-gray-200 rounded-2xl w-11 h-6 flex items-center justify-center"
             >
               <p class="text-sm">Help</p>
             </div>
             <div class="mt-4 flex justify-between gap-1">
-              <button class="btn btn-outline w-[130px] h-[30px] text-gray-600">
+              <button
+                class="copy-card btn btn-outline w-[130px] h-[30px] text-gray-600"
+              >
                 <span><i class="fa-regular fa-copy text-gray-600"></i></span
                 >Copy
               </button>
               <button
-                class="btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
+                class="call-card rounded-lg btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
               >
                 <span class="text-white"><i class="fa-solid fa-phone"></i></span
                 >Call
               </button>
             </div>
           </div>
-          <div class="rounded-lg w-[300px] min-h-[200px] p-4 bg-white">
+          <!-- Card-06 -->
+          <div
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+          >
             <div class="flex justify-between items-center">
               <div
                 class="h-[40px] w-[40px] bg-red-300 flex justify-center items-center rounded-lg"
@@ -279,8 +303,8 @@
               <i class="fa-solid fa-heart"></i>
             </div>
             <h3 class="font-bold text-md mt-2">Anti-Corruption Helpline</h3>
-            <p class="text-[12px] text-gray-600">Anti-Corruption</p>
-            <h1 class="font-bold text-xl mt-3">106</h1>
+            <p class="emg-stitle text-[12px] text-gray-600">Anti-Corruption</p>
+            <h1 class="emg-call-no mb-2 font-bold text-xl mt-3">106</h1>
             <div
               class="bg-gray-200 rounded-2xl w-11 h-6 flex items-center justify-center"
             >
@@ -288,20 +312,23 @@
             </div>
             <div class="mt-4 flex justify-between gap-1">
               <button
-                class="rounded-lg btn btn-outline w-[130px] h-[30px] text-gray-600"
+                class="copy-card rounded-lg btn btn-outline w-[130px] h-[30px] text-gray-600"
               >
                 <span><i class="fa-regular fa-copy text-gray-600"></i></span
                 >Copy
               </button>
               <button
-                class="rounded-lg btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
+                class="call-card rounded-lg btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
               >
                 <span class="text-white"><i class="fa-solid fa-phone"></i></span
                 >Call
               </button>
             </div>
           </div>
-          <div class="rounded-lg w-[300px] min-h-[200px] p-4 bg-white">
+          <!-- Card-07 -->
+          <div
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+          >
             <div class="flex justify-between items-center">
               <div
                 class="h-[40px] w-[40px] bg-red-300 flex justify-center items-center rounded-lg"
@@ -315,8 +342,10 @@
               <i class="fa-solid fa-heart"></i>
             </div>
             <h3 class="font-bold text-md mt-2">Electricity Helpline</h3>
-            <p class="text-[12px] text-gray-600">Electricity Outage</p>
-            <h1 class="font-bold text-xl mt-3">16216</h1>
+            <p class="emg-stitle text-[12px] text-gray-600">
+              Electricity Outage
+            </p>
+            <h1 class="emg-call-no mb-2 font-bold text-xl mt-3">16216</h1>
             <div
               class="bg-gray-200 rounded-2xl w-16 h-6 flex items-center justify-center"
             >
@@ -324,20 +353,23 @@
             </div>
             <div class="mt-4 flex justify-between gap-1">
               <button
-                class="rounded-lg btn btn-outline w-[130px] h-[30px] text-gray-600"
+                class="copy-card rounded-lg btn btn-outline w-[130px] h-[30px] text-gray-600"
               >
                 <span><i class="fa-regular fa-copy text-gray-600"></i></span
                 >Copy
               </button>
               <button
-                class="rounded-lg btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
+                class="call-card rounded-lg btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
               >
                 <span class="text-white"><i class="fa-solid fa-phone"></i></span
                 >Call
               </button>
             </div>
           </div>
-          <div class="rounded-lg w-[300px] min-h-[200px] p-4 bg-white">
+          <!-- Card-08 -->
+          <div
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+          >
             <div class="flex justify-between items-center">
               <div
                 class="h-[40px] w-[40px] bg-red-300 flex justify-center items-center rounded-lg"
@@ -351,8 +383,8 @@
               <i class="fa-solid fa-heart"></i>
             </div>
             <h3 class="font-bold text-md mt-2">Brac Helpline</h3>
-            <p class="text-[12px] text-gray-600">Brac</p>
-            <h1 class="font-bold text-xl mt-3">16445</h1>
+            <p class="emg-stitle text-[12px] text-gray-600">Brac</p>
+            <h1 class="emg-call-no mb-2 font-bold text-xl mt-3">16445</h1>
             <div
               class="bg-gray-200 rounded-2xl w-9 h-6 flex items-center justify-center"
             >
@@ -360,20 +392,23 @@
             </div>
             <div class="mt-4 flex justify-between gap-1">
               <button
-                class="rounded-lg btn btn-outline w-[130px] h-[30px] text-gray-600"
+                class="copy-card rounded-lg btn btn-outline w-[130px] h-[30px] text-gray-600"
               >
                 <span><i class="fa-regular fa-copy text-gray-600"></i></span
                 >Copy
               </button>
               <button
-                class="rounded-lg btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
+                class="call-card rounded-lg btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
               >
                 <span class="text-white"><i class="fa-solid fa-phone"></i></span
                 >Call
               </button>
             </div>
           </div>
-          <div class="rounded-lg w-[300px] min-h-[200px] p-4 bg-white">
+          <!-- Card-09 -->
+          <div
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+          >
             <div class="flex justify-between items-center">
               <div
                 class="h-[40px] w-[40px] bg-red-300 flex justify-center items-center rounded-lg"
@@ -387,8 +422,10 @@
               <i class="fa-solid fa-heart"></i>
             </div>
             <h3 class="font-bold text-md mt-2">Bangladesh Railway Helpline</h3>
-            <p class="text-[12px] text-gray-600">Bangladesh Railway</p>
-            <h1 class="font-bold text-xl mt-3">163</h1>
+            <p class="emg-stitle text-[12px] text-gray-600">
+              Bangladesh Railway
+            </p>
+            <h1 class="emg-call-no mb-2 font-bold text-xl mt-3">163</h1>
             <div
               class="bg-gray-200 rounded-2xl w-15 h-6 flex items-center justify-center"
             >
@@ -396,13 +433,13 @@
             </div>
             <div class="mt-4 flex justify-between gap-1">
               <button
-                class="rounded-lg btn btn-outline w-[130px] h-[30px] text-gray-600"
+                class="copy-card rounded-lg btn btn-outline w-[130px] h-[30px] text-gray-600"
               >
                 <span><i class="fa-regular fa-copy text-gray-600"></i></span
                 >Copy
               </button>
               <button
-                class="rounded-lg btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
+                class="call-card rounded-lg btn btn-soft text-white bg-green-500 w-[130px] h-[30px]"
               >
                 <span class="text-white"><i class="fa-solid fa-phone"></i></span
                 >Call
@@ -423,6 +460,9 @@
           >
             Clear
           </button>
+        </div>
+        <div class="call-history bg-gray-500 w-64 ml-3 rounded-lg">
+          <h2 class="font-bold">Call History</h2>
         </div>
       </aside>
     </section>
