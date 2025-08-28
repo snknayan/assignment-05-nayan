@@ -6,10 +6,10 @@ function getIdElement(id) {
   return idElement;
 }
 //Class ELement Return
-function getClassElement(id) {
-  const classElement = document.getElementsByClassName(id);
-  return classElement;
-}
+// function getClassElement(id) {
+//   const classElement = document.getElementsByClassName(id);
+//   return classElement;
+// }
 //InnerText Return
 /* function getElementText(id) {
   const subTitles = getClassElement(id);
@@ -80,6 +80,25 @@ for (let callBtn of callBtns) {
       historyContainer.append(newCart);
       alert(subTitleText + " : " + emgCallNumber);
     }
+  });
+}
+
+//Heart Button Functionalities
+
+const HeartBtns = document.getElementsByClassName("heart");
+console.log(HeartBtns);
+
+for (let heartBtn of HeartBtns) {
+  heartBtn.addEventListener("click", function () {
+    const heartText =
+      heartBtn.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode
+        .childNodes[3].childNodes[1].childNodes[3].childNodes[1].childNodes[1]
+        .innerText;
+
+    let heartCount = Number(heartText) + 1;
+    let heartTotalCount = (document.getElementById("heart-count").innerText =
+      heartCount);
+    console.log(heartTotalCount);
   });
 }
 
