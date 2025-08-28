@@ -110,7 +110,6 @@ for (let copyBtn of copyBtns) {
     let copyCallText = copyBtn.parentNode.parentNode.childNodes[7].innerText;
 
     alert("Number Copied: " + copyCallText);
-
     //Copy Text
     const textCopy = navigator.clipboard.writeText(copyCallText);
 
