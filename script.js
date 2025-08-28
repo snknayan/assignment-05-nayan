@@ -111,6 +111,9 @@ for (let copyBtn of copyBtns) {
 
     alert("Number Copied: " + copyCallText);
 
+    //Copy Text
+    const textCopy = navigator.clipboard.writeText(copyCallText);
+
     const copyCountText =
       copyBtn.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode
         .childNodes[3].childNodes[1].childNodes[3].childNodes[5].childNodes[1]
