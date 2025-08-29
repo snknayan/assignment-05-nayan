@@ -14,7 +14,7 @@ function getIdElement(id) {
 /* function getElementText(id) {
   const subTitles = getClassElement(id);
   for (let subTitle of subTitles) {
-     const subTitleText=subTitle.innertext;
+     const subTitleText=subTitle.innerText;
   }
  
 } */
@@ -67,7 +67,7 @@ for (let callBtn of callBtns) {
       const now = new Date();
       const currentTime = now.toLocaleTimeString();
       newCart.innerHTML = `<div
-            class="call-history mb-3 p-2 shadow-sm bg-[#FAFAFA] w-66 ml-2 mr-2 rounded-lg flex justify-between items-center"
+            class="call-history mb-3 p-2 shadow-sm bg-[#FAFAFA]  ml-2 mr-2 rounded-lg flex justify-between items-center"
           >
             <div>
               <h2 class="text-gray-800 text-sm font-semibold">${titleText}</h2>

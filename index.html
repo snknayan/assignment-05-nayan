@@ -89,7 +89,7 @@
         <div class="Card-parent grid md:grid-cols-3 gap-5">
           <!-- Card-1 -->
           <div
-            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white mx-auto"
           >
             <div class="flex justify-between items-center">
               <div
@@ -130,7 +130,7 @@
           </div>
           <!-- Card-02 -->
           <div
-            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white mx-auto"
           >
             <div class="flex justify-between items-center">
               <div
@@ -169,7 +169,7 @@
           </div>
           <!-- Card-03 -->
           <div
-            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white mx-auto"
           >
             <div class="flex justify-between items-center">
               <div
@@ -208,7 +208,7 @@
           </div>
           <!-- card-4 -->
           <div
-            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white mx-auto"
           >
             <div class="flex justify-between items-center">
               <div
@@ -247,7 +247,7 @@
           </div>
           <!-- Card-05 -->
           <div
-            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white mx-auto"
           >
             <div class="flex justify-between items-center">
               <div
@@ -288,7 +288,7 @@
           </div>
           <!-- Card-06 -->
           <div
-            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white mx-auto"
           >
             <div class="flex justify-between items-center">
               <div
@@ -327,7 +327,7 @@
           </div>
           <!-- Card-07 -->
           <div
-            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white mx-auto"
           >
             <div class="flex justify-between items-center">
               <div
@@ -368,7 +368,7 @@
           </div>
           <!-- Card-08 -->
           <div
-            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white mx-auto"
           >
             <div class="flex justify-between items-center">
               <div
@@ -407,7 +407,7 @@
           </div>
           <!-- Card-09 -->
           <div
-            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white"
+            class="rounded-lg shadow-lg w-[300px] min-h-[200px] p-4 bg-white mx-auto"
           >
             <div class="flex justify-between items-center">
               <div
@@ -448,34 +448,24 @@
           </div>
         </div>
       </section>
-      <aside class="bg-white col-span-3 rounded-lg">
-        <div class="w-64 ml-3 flex justify-between items-center my-5">
-          <div>
-            <h2 class="font-semibold">
-              <span><i class="fa-regular fa-clock"></i></span> Call History
-            </h2>
+      <div class="bg-white w-full col-span-9 md:col-span-3 rounded-lg">
+        <aside class="">
+          <div class="ml-3 flex justify-between items-center my-5">
+            <div>
+              <h2 class="font-semibold">
+                <span><i class="fa-regular fa-clock"></i></span> Call History
+              </h2>
+            </div>
+            <button
+              id="btn-clear"
+              class="btn btn-soft mr-3 bg-green-500 text-white rounded-3xl w-[80px] h-[35px]"
+            >
+              Clear
+            </button>
           </div>
-          <button
-            id="btn-clear"
-            class="btn btn-soft bg-green-500 text-white rounded-3xl w-[80px] h-[35px]"
-          >
-            Clear
-          </button>
-        </div>
-        <div id="call-history-container">
-          <!-- <div
-            class="call-history mb-3 p-3 shadow-sm bg-[#FAFAFA] w-64 ml-3 rounded-lg flex justify-between items-center"
-          >
-            <div>
-              <h2 class="text-gray-800 font-semibold">Fire Service Number</h2>
-              <p class="text-gray-600 text-sm mt-1">999</p>
-            </div>
-            <div>
-              <h1>time</h1>
-            </div>
-          </div> -->
-        </div>
-      </aside>
+          <div id="call-history-container"></div>
+        </aside>
+      </div>
     </section>
 
     <script src="./script.js"></script>
